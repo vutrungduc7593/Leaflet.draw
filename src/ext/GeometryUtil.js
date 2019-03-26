@@ -66,7 +66,8 @@
 		readableArea: function (area, isMetric, precision) {
 			var areaStr,
 				units,
-				precision = L.Util.extend({}, defaultPrecision, precision);
+				precision = L.Util.extend({}, defaultPrecision, precision),
+				type;
 
 			if (isMetric) {
 				units = ['ha', 'm'];
